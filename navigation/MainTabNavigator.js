@@ -17,6 +17,9 @@ const ProfileStack = createStackNavigator(
   {
     Profile: ProfileScreen,
   },
+  {
+    headerMode: 'none',
+  },
   config
 );
 
@@ -27,8 +30,8 @@ ProfileStack.navigationOptions = {
       focused={focused}
       name={
         Platform.OS === 'ios'
-          ? `ios-information-circle${focused ? '' : '-outline'}`
-          : 'md-information-circle'
+          ? `ios-person${focused ? '' : '-outline'}`
+          : 'md-person'
       }
     />
   ),
@@ -40,13 +43,16 @@ const MatchStack = createStackNavigator(
   {
     Match: MatchScreen,
   },
+  {
+    headerMode: 'none',
+  },
   config
 );
 
 MatchStack.navigationOptions = {
   tabBarLabel: 'Match',
   tabBarIcon: ({ focused }) => (
-    <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? 'ios-link' : 'md-link'} />
+    <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? 'ios-heart' : 'md-heart'} />
   ),
 };
 
@@ -56,13 +62,16 @@ const MessageStack = createStackNavigator(
   {
     Message: MessageScreen,
   },
+  {
+    headerMode: 'none',
+  },
   config
 );
 
 MessageStack.navigationOptions = {
   tabBarLabel: 'Message',
   tabBarIcon: ({ focused }) => (
-    <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? 'ios-options' : 'md-options'} />
+    <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? 'ios-chatbubbles' : 'md-chatbubbles'} />
   ),
 };
 
