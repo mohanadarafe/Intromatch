@@ -17,10 +17,16 @@ export default{
         user3: 19,
         user4: 23
     },
+    work: {
+        user1: "Director at Arafe Inc",
+        user2: "Software Engineer Intern at Zendesk",
+        user3: "Accountant at Deloitte",
+        user4: "Building Engineer at CityStar",
+    },
     bio: {
-        user1: "I am a 22 year old Software Engineering student. I am on this social media to find love & meet people.",
+        user1: "I am a 22 year old Software Engineering. I am on this social media to find love & meet people.",
         user2: "I am a 24 year old construction worker. I have 2 cats & would like to find them some friends! I want to meet people & explore things together.",
-        user3: "I'm a 19 year old college student, fairly shy & reserved. I hope you can make me get out of my bubble.",
+        user3: "I'm a college student, fairly shy & reserved. I hope you can make me get out of my bubble.",
         user4: "I'm a 23 year old biology graduate student. I want to meet a significant other but I have a hard time coming out of my comfort zone.",
     },
     looking_for: {
@@ -52,15 +58,15 @@ export default{
         },
     },
     picture_blurred: {
-        user1: '../assets/images/blurred/user1_blur.png',
-        user2: '../assets/images/blurred/user2_blur.png',
-        user3: '../assets/images/blurred/user3_blur.png',
-        user4: '../assets/images/blurred/user4_blur.png',
+        user1: '../assets/images/blurred/user1_blur.jpg',
+        user2: '../assets/images/blurred/user2_blur.jpg',
+        user3: '../assets/images/blurred/user3_blur.jpg',
+        user4: '../assets/images/blurred/user4_blur.jpg',
     },
     picture_non_blurred: {
-        user1: '../assets/images/non-blurred/user1.png',
-        user2: '../assets/images/non-blurred/user2.png',
-        user3: '../assets/images/non-blurred/user3.png',
-        user4: '../assets/images/non-blurred/user4.png',
+        user1: '../assets/images/non-blurred/user1.jpg',
+        user2: '../assets/images/non-blurred/user2.jpg',
+        user3: '../assets/images/non-blurred/user3.jpg',
+        user4: '../assets/images/non-blurred/user4.jpg',
     }
 };
