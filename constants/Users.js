@@ -17,6 +17,13 @@ export default{
         user3: 19,
         user4: 23
     },
+    likes: {
+        user1: {
+            user2: false,
+            user3: false,
+            user4: true,
+        }
+    },
     work: {
         user1: "Director at Arafe Inc",
         user2: "Software Engineer Intern at Zendesk",
