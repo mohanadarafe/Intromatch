@@ -14,7 +14,7 @@ class MatchScreen extends React.Component {
           infinite // keep looping cards infinitely
           backgroundColor="white"
           cardHorizontalMargin={0}
-          stackSize={2} // number of cards shown in background
+          verticalSwipe={false}
         />
       </SafeAreaView>
     )
