@@ -3,7 +3,7 @@ import { SafeAreaView, StyleSheet } from 'react-native'
 import Swiper from 'react-native-deck-swiper'
 import { Card } from '../components/Card'
 import { HomeScreenPics } from '../constants/Pics'
-import Toast, {DURATION} from 'react-native-easy-toast'
+import Toast from 'react-native-easy-toast'
 
 class MatchScreen extends React.Component {
   checkForMatch = (val) => {
