@@ -1,14 +1,38 @@
 import React from 'react'
-import { Text, View } from 'react-native'
+import { SafeAreaView, ScrollView, StyleSheet } from 'react-native'
+import { ListItem } from 'react-native-elements'
+import { Messages } from '../constants/Messages'
 
-class MessageScreen extends React.Component {
+class MessagesScreen extends React.Component {
   render() {
     return (
-      <View>
-        <Text>Message Screen</Text>
-      </View>
+      <SafeAreaView>
+        <ScrollView>
+          {Messages.map((user, i) => (
+            <ListItem
+              key={i}
+              leftAvatar={{ source: user.pic, size: 'large' }}
+              title={user.title}
+              titleStyle={styles.title}
+              subtitle={user.message}
+              subtitleStyle={styles.subtitle}
+              chevron
+            />
+          ))}
+        </ScrollView>
+      </SafeAreaView>
     )
   }
 }
 
-export default MessageScreen
+const styles = StyleSheet.create({
+  title: {
+    fontSize: 24,
+    color: '#3F3F3F',
+  },
+  subtitle: {
+    color: '#A5A5A5',
+  },
+})
+
+export default MessagesScreen
