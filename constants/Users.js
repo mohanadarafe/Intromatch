@@ -22,6 +22,21 @@ export default{
             user2: false,
             user3: false,
             user4: true,
+        },
+        user2: {
+            user1: true,
+            user3: false,
+            user4: true,
+        },
+        user3: {
+            user1: false,
+            user2: true,
+            user4: true,
+        },
+        user4: {
+            user1: false,
+            user2: false,
+            user3: true,
         }
     },
     work: {
