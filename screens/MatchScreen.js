@@ -3,6 +3,7 @@ import { SafeAreaView, StyleSheet } from 'react-native'
 import Swiper from 'react-native-deck-swiper'
 import { Card } from '../components/Card'
 import { HomeScreenPics } from '../constants/Pics'
+import { Badge } from 'react-native-elements'
 
 class MatchScreen extends React.Component {
   render() {
@@ -14,7 +15,7 @@ class MatchScreen extends React.Component {
           infinite // keep looping cards infinitely
           backgroundColor="white"
           cardHorizontalMargin={0}
-          stackSize={2} // number of cards shown in background
+          verticalSwipe={false}
         />
       </SafeAreaView>
     )

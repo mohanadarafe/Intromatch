@@ -31,13 +31,13 @@ const styles = StyleSheet.create({
     overflow: 'hidden', // this does magic
   },
   title: {
-    position: 'absolute',
-    left: 10,
-    bottom: 30,
+    flex: 1,
+    justifyContent: 'flex-end',
+    marginBottom: 36
   },
   caption: {
-    position: 'absolute',
-    left: 10,
-    bottom: 10,
+    flex: 1,
+    justifyContent: 'flex-end',
+    marginBottom: 36
   },
 })
